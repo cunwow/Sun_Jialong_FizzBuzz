@@ -17,6 +17,10 @@ public class FizzBuzzController {
 
         int num = Integer.parseInt(input);
 
+        if (isDividedBy3and5and7(num)){
+            return FIZZ+BUZZ+WHIZZ;
+        }
+
         if (isDividedBy3and5(num)){
             return FIZZ+BUZZ;
         }
@@ -38,8 +42,12 @@ public class FizzBuzzController {
         return input;
     }
 
+    private boolean isDividedBy3and5and7(int num) {
+        return isDividedBy3(num) && isDividedBy5(num) && isDividedBy7(num);
+    }
+
     private boolean isDividedBy3and5(int num) {
-        return isDividedBy3(num)&&isDividedBy5(num);
+        return isDividedBy3(num) && isDividedBy5(num);
     }
 
     private boolean isDividedBy7(int num) {

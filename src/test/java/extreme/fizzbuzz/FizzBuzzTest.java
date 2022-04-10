@@ -81,4 +81,17 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(expected,result);
     }
+
+    @Test
+    void The_FizzBuzzWhizz_should_be_returned_when_the_number_is_Divided_by_3_and_5_and_7(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //105  210  840  945
+        input = "945";
+        expected = "FizzBuzzWhizz";
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
 }

@@ -1,3 +1,5 @@
+package extreme.fizzbuzz;
+
 /**
  * @author NickSun
  * QQ502938688
@@ -17,7 +19,7 @@ public class Tasking {
      * 7.如果数字中包含了7，则忽略被5整除的判定，若同时还包含5，就忽略规则6中忽略被3整 除的判定，比如要报75的同学只报Fizz，其他case自己补齐。
      *
      *
-     *  Tasking List
+     *  extreme.fizzbuzz.Tasking List
      *
      * - Given 需要打印的数字是2（不是3或者5或者7的倍数），When 打印，Then 打印`"2"`
      * - test result: input 2  output 2  pass
@@ -35,7 +37,7 @@ public class Tasking {
      * - test result: input 15, 30, 45   FizzBuzz  pass
      *
      * - Given 需要打印的数字是105（同时是3和5和7的倍数），When 打印，Then 打印`"FizzBuzzWhizz"`
-     *
+     * - test result: input 105  210  840  945   FizzBuzzWhizz  pass
      *
      *
      *
