@@ -30,7 +30,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void The_Fizz_should_be_returned_when_the_number_is_Divided_by_three(){
+    void The_Fizz_should_be_returned_when_the_number_is_Divided_by_3(){
         FizzBuzzController fbz = new FizzBuzzController();
 
 
@@ -41,5 +41,19 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(expected,result);
     }
+
+    @Test
+    void The_Fizz_should_be_returned_when_the_number_is_Divided_by_5(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //5 25 35 55 105
+        input = "35";
+        expected = "Buzz";
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
+
 
 }
