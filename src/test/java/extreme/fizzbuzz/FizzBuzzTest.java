@@ -56,4 +56,16 @@ public class FizzBuzzTest {
     }
 
 
+    @Test
+    void The_Fizz_should_be_returned_when_the_number_is_Divided_by_7(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //7 28 49
+        input = "49";
+        expected = "Whizz";
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
 }
