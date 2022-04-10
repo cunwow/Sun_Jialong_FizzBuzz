@@ -32,6 +32,8 @@ public class Tasking {
      * - test result: input 7, 28, 49   output Whizz  pass
      *
      * - Given 需要打印的数字是15（同时是3和5的倍数），When 打印，Then 打印`"FizzBuzz"`
+     * - test result: input 15, 30, 45   FizzBuzz  pass
+     *
      * - Given 需要打印的数字是105（同时是3和5和7的倍数），When 打印，Then 打印`"FizzBuzzWhizz"`
      *
      *
