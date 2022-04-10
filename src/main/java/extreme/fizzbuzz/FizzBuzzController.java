@@ -19,42 +19,104 @@ public class FizzBuzzController {
     public String say(String input) {
 
         int num = Integer.parseInt(input);
-
-        if (isContainBy3(input)){
-            return FIZZ;
-        }
-
+        //规则7
         if (isContainBy7(input)){
-            return WHIZZ;
+            //是否包含5 逻辑一样.
+//            if (isContainBy5(input)){
+//                if (isDividedBy3and7(num)) {
+//                    return FIZZ + WHIZZ;
+//                }
+//                else if (isDividedBy3(num)) {
+//                    return FIZZ;
+//                }
+//                else if (isDividedBy7(num)) {
+//                    return WHIZZ;
+//                }
+//            }
+            //忽略被5整除的判定
+            //规则3
+            if (isDividedBy3and7(num)) {
+                return FIZZ + WHIZZ;
+            }
+            //规则3 end
+            //规则2
+            if (isDividedBy3(num)) {
+                return FIZZ;
+            }
+
+            if (isDividedBy7(num)) {
+                return WHIZZ;
+            }
+        }
+        //规则7 end
+
+
+        //规则6
+        if (isContainBy5(input)) {
+
+            if (isDividedBy5(num) && isDividedBy7(num)) {
+                return BUZZ + WHIZZ;
+            }
+            else if (isDividedBy5(num)) {
+                return BUZZ;
+            }
+            else if (isDividedBy7(num)) {
+                return WHIZZ;
+            }
+
+        }
+        //规则6 end
+
+        //规则4 and 5
+        if (isContainBy3(input)) {
+            return FIZZ;
+        }
+        //规则4 and 5 end
+
+
+        //规则3
+        if (isDividedBy3and5and7(num)) {
+            return FIZZ + BUZZ + WHIZZ;
         }
 
-        if (isContainBy5(input)){
-            return BUZZ;
+        if (isDividedBy3and5(num)) {
+            return FIZZ + BUZZ;
+        }
+        if (isDividedBy5and7(num)) {
+            return BUZZ + WHIZZ;
         }
 
-        if (isDividedBy3and5and7(num)){
-            return FIZZ+BUZZ+WHIZZ;
+        if (isDividedBy3and7(num)) {
+            return FIZZ + WHIZZ;
         }
 
-        if (isDividedBy3and5(num)){
-            return FIZZ+BUZZ;
-        }
+        //规则3 end
 
-        if (isDividedBy3(num)){
+        //规则2
+        if (isDividedBy3(num)) {
             return FIZZ;
         }
 
-        if (isDividedBy5(num)){
+        if (isDividedBy5(num)) {
             return BUZZ;
         }
 
-        if (isDividedBy7(num)){
+        if (isDividedBy7(num)) {
             return WHIZZ;
         }
+        //规则2 end
 
-
-
+        //规则1
         return input;
+        //规则1 end
+    }
+
+    private boolean isDividedBy3and7(int num) {
+        return isDividedBy3(num) && isDividedBy7(num);
+    }
+
+    private boolean isDividedBy5and7(int num) {
+        return isDividedBy5(num) && isDividedBy7(num);
     }
 
     private boolean isContainBy7(String num) {

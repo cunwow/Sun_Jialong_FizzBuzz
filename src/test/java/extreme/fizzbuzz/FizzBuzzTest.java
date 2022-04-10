@@ -16,6 +16,8 @@ public class FizzBuzzTest {
     public static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
     public static final String FIZZ_BUZZ = "FizzBuzz";
     public static final String WHIZZ = "Whizz";
+    public static final String BUZZ_WHIZZ = "BuzzWhizz";
+
 
     public String input;
     public String result;
@@ -146,6 +148,34 @@ public class FizzBuzzTest {
 
         //30 35 330
         input = "30";
+        expected = FIZZ;
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
+
+    //35 BuzzWhizz
+    @Test
+    void The_BuzzWhizz_should_be_returned_when_the_number_is_35(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //"35 150"
+        input = "35";
+        expected = BUZZ_WHIZZ;
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
+
+    //35 BuzzWhizz
+    @Test
+    void The_Fizz_should_be_returned_when_the_number_is_75(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //"75"
+        input = "75";
         expected = FIZZ;
 
         result = fbz.say(input);

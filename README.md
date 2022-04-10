@@ -47,7 +47,10 @@
 - test result: input 30 35 330   Whizz  pass
 
 - Given 需要打印的数字是35（包含5），When 打印，Then 打印`"BuzzWhizz"`
+- test result: input 35   BuzzWhizz  pass
+
 - Given 需要打印的数字是75（包含7），When 打印，Then 打印`"Fizz"`
+- test result: input 75   Fizz  pass
 
 ## 编码路线
 `master`分支一共有5个tag（`Task1`，`Task2`，`Task3`，`Task4`，`Task5`），它们分别对应5个Task。Clone下代码库之后，`checkout`到最开始的提交，一步一步往后面`checkout`即可查看所有步骤，`Task4`与`Task5`之间有1次Refactor的`commit`。
