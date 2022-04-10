@@ -126,4 +126,17 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(expected,result);
     }
+
+    @Test
+    void The_Whizz_should_be_returned_when_the_number_is_contain_by_7(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //17 27 117 11117
+        input = "11117";
+        expected = WHIZZ;
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
 }

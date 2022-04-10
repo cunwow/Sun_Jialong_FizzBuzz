@@ -20,6 +20,10 @@ public class FizzBuzzController {
 
         int num = Integer.parseInt(input);
 
+        if (isContainBy7(input)){
+            return WHIZZ;
+        }
+
         if (isContainBy5(input)){
             return BUZZ;
         }
@@ -27,7 +31,6 @@ public class FizzBuzzController {
         if (isContainBy3(input)){
             return FIZZ;
         }
-
 
         if (isDividedBy3and5and7(num)){
             return FIZZ+BUZZ+WHIZZ;
@@ -52,6 +55,10 @@ public class FizzBuzzController {
 
 
         return input;
+    }
+
+    private boolean isContainBy7(String num) {
+        return num.contains(SEVEN);
     }
 
     private boolean isContainBy5(String num) {
