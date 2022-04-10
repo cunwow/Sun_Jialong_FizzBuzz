@@ -20,6 +20,8 @@ public class Tasking {
      *  Tasking List
      *
      * - Given 需要打印的数字是2（不是3或者5或者7的倍数），When 打印，Then 打印`"2"`
+     * - test result: input 2  output 2  pass
+     *
      *
      * - Given 需要打印的数字是6（3的倍数），When 打印，Then 打印`"Fizz"`
      * - Given 需要打印的数字是10（5的倍数），When 打印，Then 打印`"Buzz"`
