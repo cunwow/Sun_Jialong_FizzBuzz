@@ -22,8 +22,9 @@ public class Tasking {
      * - Given 需要打印的数字是2（不是3或者5或者7的倍数），When 打印，Then 打印`"2"`
      * - test result: input 2  output 2  pass
      *
-     *
      * - Given 需要打印的数字是6（3的倍数），When 打印，Then 打印`"Fizz"`
+     * - test result: input 3, 6, 12, 18, 21, 99   output Fizz  pass
+     *
      * - Given 需要打印的数字是10（5的倍数），When 打印，Then 打印`"Buzz"`
      * - Given 需要打印的数字是7（7的倍数），When 打印，Then 打印`"Whizz"`
      * - Given 需要打印的数字是15（同时是3和5的倍数），When 打印，Then 打印`"FizzBuzz"`
