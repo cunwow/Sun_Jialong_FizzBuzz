@@ -298,13 +298,93 @@ void say_1357_print_1357(){
 
     Assertions.assertEquals(expected,result);
 }
+
+//-start
+
 //537, "Fizz",
+@Test
+void say_537_print_Fizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "537";
+    expected = "Fizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //1375, "1375",
+@Test
+void say_1375_print_1375(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "1375";
+    expected = "1375";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //3157, "Whizz",
+@Test
+void say_3157_print_Whizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "3157";
+    expected = "Whizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //375, "Fizz",
+@Test
+void say_375_print_Fizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "375";
+    expected = "Fizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //357, "FizzWhizz",
+@Test
+void say_357_print_FizzWhizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "357";
+    expected = "FizzWhizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //3745, "Whizz",
+@Test
+void say_3745_print_Whizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "3745";
+    expected = "Whizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 //735, "FizzWhizz"
+@Test
+void say_735_print_FizzWhizz(){
+    FizzBuzzController fbz = new FizzBuzzController();
+
+    input = "735";
+    expected = "FizzWhizz";
+
+    result = fbz.say(input);
+
+    Assertions.assertEquals(expected,result);
+}
 
 
 }
