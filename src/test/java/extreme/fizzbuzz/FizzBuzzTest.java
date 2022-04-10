@@ -139,4 +139,17 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(expected,result);
     }
+
+    @Test
+    void The_Fizz_should_be_returned_when_the_number_is_contain_by_3_NO_FIZZBUZZ(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //30 35 330
+        input = "30";
+        expected = FIZZ;
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
 }
