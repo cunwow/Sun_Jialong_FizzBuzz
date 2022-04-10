@@ -55,7 +55,7 @@ public class FizzBuzzTest {
         FizzBuzzController fbz = new FizzBuzzController();
 
         //5 25 35 55 105
-        input = "35";
+        input = "10";
         expected = BUZZ;
 
         result = fbz.say(input);
@@ -82,7 +82,7 @@ public class FizzBuzzTest {
         FizzBuzzController fbz = new FizzBuzzController();
 
         //15 30 45
-        input = "45";
+        input = "60";
         expected = FIZZ_BUZZ;
 
         result = fbz.say(input);
@@ -95,7 +95,7 @@ public class FizzBuzzTest {
         FizzBuzzController fbz = new FizzBuzzController();
 
         //105  210  840  945
-        input = "945";
+        input = "210";
         expected = FIZZ_BUZZ_WHIZZ;
 
         result = fbz.say(input);
@@ -121,7 +121,7 @@ public class FizzBuzzTest {
         FizzBuzzController fbz = new FizzBuzzController();
 
         //51 252 151 11511
-        input = "11511";
+        input = "235";
         expected = BUZZ;
 
         result = fbz.say(input);
@@ -134,7 +134,7 @@ public class FizzBuzzTest {
         FizzBuzzController fbz = new FizzBuzzController();
 
         //17 27 117 11117
-        input = "11117";
+        input = "252";
         expected = WHIZZ;
 
         result = fbz.say(input);
