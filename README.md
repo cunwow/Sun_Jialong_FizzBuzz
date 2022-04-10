@@ -52,6 +52,21 @@
 - Given 需要打印的数字是75（包含7），When 打印，Then 打印`"Fizz"`
 - test result: input 75   Fizz  pass
 
+- Given 需要打印的数字是75，When 打印，Then 打印`"Fizz"`
+- Given 需要打印的数字是567，When 打印，Then 打印`"FizzWhizz"`
+- Given 需要打印的数字是175，When 打印，Then 打印`"Whizz"`
+- Given 需要打印的数字是1575，When 打印，Then 打印`"FizzWhizz"`
+- Given 需要打印的数字是1357，When 打印，Then 打印`"1357"`
+- Given 需要打印的数字是537，When 打印，Then 打印`"Fizz"`
+- Given 需要打印的数字是1375，When 打印，Then 打印`"1375"`
+- Given 需要打印的数字是3157，When 打印，Then 打印`"Whizz"`
+- Given 需要打印的数字是375，When 打印，Then 打印`"Fizz"`
+- Given 需要打印的数字是357，When 打印，Then 打印`"FizzWhizz"`
+- Given 需要打印的数字是3745，When 打印，Then 打印`"Whizz"`
+- Given 需要打印的数字是735，When 打印，Then 打印`"FizzWhizz"`
+
+
+
 ## 编码路线
 `master`分支一共有5个tag（`Task1`，`Task2`，`Task3`，`Task4`，`Task5`），它们分别对应5个Task。Clone下代码库之后，`checkout`到最开始的提交，一步一步往后面`checkout`即可查看所有步骤，`Task4`与`Task5`之间有1次Refactor的`commit`。
 

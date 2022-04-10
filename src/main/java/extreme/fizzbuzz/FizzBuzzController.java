@@ -47,6 +47,7 @@ public class FizzBuzzController {
             if (isDividedBy7(num)) {
                 return WHIZZ;
             }
+            return input;
         }
         //规则7 end
 
@@ -63,6 +64,8 @@ public class FizzBuzzController {
             else if (isDividedBy7(num)) {
                 return WHIZZ;
             }
+
+            return input;
 
         }
         //规则6 end
