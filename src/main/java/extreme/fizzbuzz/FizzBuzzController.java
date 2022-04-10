@@ -12,11 +12,17 @@ public class FizzBuzzController {
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";
     public static final String WHIZZ = "Whizz";
-    public static final String Three = "3";
+    public static final String THREE = "3";
+    private static final CharSequence FIVE = "5";
+    private static final CharSequence SEVEN = "7";
 
     public String say(String input) {
 
         int num = Integer.parseInt(input);
+
+        if (isContainBy5(input)){
+            return BUZZ;
+        }
 
         if (isContainBy3(input)){
             return FIZZ;
@@ -48,8 +54,12 @@ public class FizzBuzzController {
         return input;
     }
 
+    private boolean isContainBy5(String num) {
+        return num.contains(FIVE);
+    }
+
     private boolean isContainBy3(String num) {
-        return num.contains(Three);
+        return num.contains(THREE);
     }
 
     private boolean isDividedBy3and5and7(int num) {
