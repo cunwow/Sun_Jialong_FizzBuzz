@@ -12,10 +12,16 @@ public class FizzBuzzController {
     public static final String FIZZ = "Fizz";
     public static final String BUZZ = "Buzz";
     public static final String WHIZZ = "Whizz";
+    public static final String Three = "3";
 
     public String say(String input) {
 
         int num = Integer.parseInt(input);
+
+        if (isContainBy3(input)){
+            return FIZZ;
+        }
+
 
         if (isDividedBy3and5and7(num)){
             return FIZZ+BUZZ+WHIZZ;
@@ -40,6 +46,10 @@ public class FizzBuzzController {
 
 
         return input;
+    }
+
+    private boolean isContainBy3(String num) {
+        return num.contains(Three);
     }
 
     private boolean isDividedBy3and5and7(int num) {

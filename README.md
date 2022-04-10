@@ -14,9 +14,31 @@
 -6.如果数字中包含了5，那么忽略规则4和规则5，并且忽略被3整除的判定，比如要报35的同学不报Fizz，报BuzzWhizz，其他case自己补齐。
 -7.如果数字中包含了7，则忽略被5整除的判定，若同时还包含5，就忽略规则6中忽略被3整 除的判定，比如要报75的同学只报Fizz，其他case自己补齐。
 
-## extreme.fizzbuzz.Tasking
+## extreme.Tasking
 
-请看 Tasking文件
+- Given 需要打印的数字是2（不是3或者5或者7的倍数），When 打印，Then 打印`"2"`
+- test result: input 2  output 2  pass
+
+- Given 需要打印的数字是6（3的倍数），When 打印，Then 打印`"Fizz"`
+- test result: input 3, 6, 12, 18, 21, 99   output Fizz  pass
+
+- Given 需要打印的数字是10（5的倍数），When 打印，Then 打印`"Buzz"`
+- test result: input 5, 25, 35, 55, 105   output Buzz  pass
+
+- Given 需要打印的数字是7（7的倍数），When 打印，Then 打印`"Whizz"`
+- test result: input 7, 28, 49   output Whizz  pass
+
+- Given 需要打印的数字是15（同时是3和5的倍数），When 打印，Then 打印`"FizzBuzz"`
+- test result: input 15, 30, 45   FizzBuzz  pass
+
+- Given 需要打印的数字是105（同时是3和5和7的倍数），When 打印，Then 打印`"FizzBuzzWhizz"`
+- test result: input 105  210  840  945   FizzBuzzWhizz  pass
+
+- Given 需要打印的数字是13（包含3），When 打印，Then 打印`"Fizz"`
+- test result: input 13 23 113 11113   Fizz  pass
+
+- Given 需要打印的数字是151（包含5），When 打印，Then 打印`"Buzz"`
+- Given 需要打印的数字是17（包含7），When 打印，Then 打印`"Whizz"`
 
 ## 编码路线
 `master`分支一共有5个tag（`Task1`，`Task2`，`Task3`，`Task4`，`Task5`），它们分别对应5个Task。Clone下代码库之后，`checkout`到最开始的提交，一步一步往后面`checkout`即可查看所有步骤，`Task4`与`Task5`之间有1次Refactor的`commit`。

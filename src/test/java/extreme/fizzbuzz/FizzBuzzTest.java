@@ -94,4 +94,17 @@ public class FizzBuzzTest {
 
         Assertions.assertEquals(expected,result);
     }
+
+    @Test
+    void The_Fizz_should_be_returned_when_the_number_is_contain_by_3(){
+        FizzBuzzController fbz = new FizzBuzzController();
+
+        //13 23 113 11113
+        input = "23";
+        expected = "Fizz";
+
+        result = fbz.say(input);
+
+        Assertions.assertEquals(expected,result);
+    }
 }
